@@ -1,0 +1,29 @@
+server:
+  port: ${PORT:8000}
+
+application:
+  env: ${APP_ENV:local}
+
+kafka:
+  servers: ${KAFKA_HOSTS_AND_PORTS:localhost:29092}
+  topic: ${EVENTS_TOPIC:playground.topic}
+  consumerId: ${CONSUMER_ID:consumer1}
+
+spring:
+  datasource1:
+    db: ${DB1_NAME:db1}
+    host: ${DB1_HOST:localhost}
+    port: ${DB1_PORT:5432}
+    username: ${DB1_USERNAME:db1_user}
+    password: ${DB1_PASS:db1_pass}
+    maximum-pool-size: ${DB1_SIZE:10}
+
+  datasource2:
+    db: ${DB2_NAME:db2}
+    host: ${DB2_HOST:localhost}
+    port: ${DB2_PORT:5432}
+    username: ${DB2_USERNAME:db2_user}
+    password: ${DB2_PASS:db2_pass}
+    maximum-pool-size: ${DB2_SIZE:10}
+
+
