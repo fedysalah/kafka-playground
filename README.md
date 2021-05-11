@@ -1,2 +1,2 @@
-### Kafka Playground
-
+# kafka-playground
+Try stuff with kafka 
